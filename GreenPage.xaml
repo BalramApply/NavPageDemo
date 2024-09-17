@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavPageDemo.GreenPage"
+             Title="GreenPage" BackgroundColor="LightGreen">
+    <ScrollView>
+        <Grid RowDefinitions="Auto, *, 60" ColumnDefinitions="*" Margin="20, 30, 20, 10">
+            <Label Grid.Row="0"
+               Text="Welcome to the Green page!" TextColor="DarkGreen"
+               FontSize="Large" FontFamily="OpenSans_Semibold"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+            <HorizontalStackLayout Grid.Row="2" Spacing="20"
+                           HorizontalOptions="Center" VerticalOptions="Center">
+                <Button BackgroundColor="White" Clicked="GoMain"
+                WidthRequest="50" HeightRequest="50" BorderColor="Black"/>
+
+                <Button BackgroundColor="PaleVioletRed" Clicked="GoRed"
+WidthRequest="50" HeightRequest="50" BorderColor="Black"/>
+
+                <Button BackgroundColor="LightBlue" Clicked="GoBlue"
+WidthRequest="50" HeightRequest="50" BorderColor="Black"/>
+            </HorizontalStackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavPageDemo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="NavigationPage Demo!" FontFamily="OpenSans_Semibold"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32" HorizontalTextAlignment="Center"
+                HorizontalOptions="Center" FontAttributes="Bold"/>
+
+            <Label
+    Text="Another .NET MAUI Lesson by Balram Patel" 
+                FontFamily="OpenSans_Semibold"
+    SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Another .NET MAUI Lesson by Balram Patel"
+    FontSize="14" HorizontalTextAlignment="Center"
+    HorizontalOptions="Center"/>
+
+            <Button
+                x:Name="btnGoRed" BackgroundColor="PaleVioletRed"
+                Text="Go to Red Page" 
+                SemanticProperties.Hint="Navigation To The Red Page"
+                Clicked="GoRed"
+                HorizontalOptions="Center" />
+
+            <Button
+    x:Name="btnGoGreen" BackgroundColor="LightGreen"
+    Text="Go to Green Page" 
+    SemanticProperties.Hint="Navigation To The Green Page"
+    Clicked="GoGreen"
+    HorizontalOptions="Center" />
+
+            <Button
+    x:Name="btnGoBlue" BackgroundColor="LightSkyBlue"
+    Text="Go to Blue Page" 
+    SemanticProperties.Hint="Navigation To The Blue Page"
+    Clicked="GoBlue"
+    HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
